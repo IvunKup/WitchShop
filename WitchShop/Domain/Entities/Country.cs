@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Entities
+﻿namespace Domain.Entities
 {
-    internal class Country : BaseEntity
+    public class Country
     {
         public string CountryName { get; set; }
         public string CountryCode { get; set; }
+        public ICollection<Drug> Drugs { get; set; }
     }
 }
