@@ -10,8 +10,8 @@ public class CountryValidator : AbstractValidator<Country>
         RuleFor(country => country.CountryName)
             .NotNullOrEmptyWithMessage(nameof(Country.CountryName))
             .Length(2, 100).WithMessage(ValidationMasages.InvalidLength(nameof(Country.CountryName)))
-            .Matches(@"^[A-Za-z ]+$").WithMessage(ValidationMasages.InvalidSpelling(nameof(Country.CountryName)));
+            .Matches(@"^[A-Za-zА-Яа-я ]+$").WithMessage(ValidationMasages.InvalidSpelling(nameof(Country.CountryName)));
         RuleFor(country => country.CountryCode)
-            .Matches(@"^[A-Z]{2}$").WithMessage(ValidationMasages.InvalidSpelling(nameof(Country.CountryCode)));
+            .Matches(@"^[A-ZА-Я]{2}$").WithMessage(ValidationMasages.InvalidSpelling(nameof(Country.CountryCode)));
     }
 }

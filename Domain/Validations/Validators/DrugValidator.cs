@@ -15,6 +15,6 @@ public class DrugValidator : AbstractValidator<Drug>
             .NotNullOrEmptyWithMessage(nameof(Drug.Manufactorer))
             .Length(2, 100).WithMessage(ValidationMasages.InvalidLength(nameof(Drug.Manufactorer)));
         RuleFor(drug => drug.CountryCodeId)
-            .Matches(@"^[A-Z]{2}$").WithMessage(ValidationMasages.InvalidSpelling(nameof(Drug.CountryCodeId)));
+            .Matches(@"^[A-ZА-Я]{2}$").WithMessage(ValidationMasages.InvalidSpelling(nameof(Drug.CountryCodeId)));
     }
 }
