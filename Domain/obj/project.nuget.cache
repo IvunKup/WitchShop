@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "L/MWUuZk+fg=",
+  "dgSpecHash": "c7nW3qle3H0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\WitchShop\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\ykapel\\Desktop\\WitchShop\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512"
+    "C:\\Users\\ykapel\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
+    "C:\\Users\\ykapel\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\ykapel\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\ykapel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
